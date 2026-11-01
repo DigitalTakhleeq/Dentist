@@ -87,8 +87,7 @@ svg{width:1em;height:1em;flex:none}
 .hero-words{position:absolute;left:0;right:0;top:15%;height:clamp(150px,30vh,300px);display:grid;place-items:center;pointer-events:none}
 .hw{grid-area:1/1;font-size:clamp(100px,24vw,330px);line-height:1;font-weight:500;letter-spacing:-.06em;color:#566174;opacity:0;transform:translateY(40px) scale(.96);filter:blur(14px);transition:opacity .7s var(--ease),transform .9s var(--ease),filter .7s var(--ease)}
 .hw.is-on{opacity:1;transform:none;filter:none}
-.tooth{position:absolute;left:50%;top:50%;height:min(66vh,600px);aspect-ratio:691/734;translate:-50% -50%}
-.tooth::before{content:"";position:absolute;left:50%;bottom:2%;width:64%;height:7%;translate:-50% 0;background:radial-gradient(closest-side,rgba(35,71,232,.24),transparent);filter:blur(5px)}
+.tooth{position:absolute;left:50%;top:50%;height:min(64vh,580px);aspect-ratio:640/612;translate:-50% -50%}
 .tooth canvas,.tooth img{position:absolute;inset:0;width:100%;height:100%}
 .tooth img{object-fit:contain}
 .tooth [hidden]{display:none !important}

@@ -12,8 +12,8 @@ A demo to show dentists. No framework, no build step, no dependencies.
 | `index.html` | All sections and copy. Search and replace "Ivora Dental" / "Dr. Hana Lee" to rebrand for a doctor. |
 | `css/styles.css` | Design tokens at the top (`:root`): colours, fonts, easing. Change `--primary` to recolour the whole site. |
 | `js/main.js` | Scroll-driven hero, pinned sections, slider, marquee, FAQ, form. |
-| `js/tooth.js` | The hero tooth. Draws `assets/tooth/dirty.webp` and `clean.webp` with WebGL: the tooth turns in 3D as you scroll, the plaque dissolves behind a foam front, then a polish sweep and sparkles finish it. Tweak `CFG` at the top (`cleanFrom`, `cleanUntil`, `turnFrom`, `turnTo`, `size`). |
-| `assets/tooth/*.webp` | The two tooth photos (transparent background). Replace both with images of the same size and framing to change the tooth. |
+| `js/tooth.js` | The hero tooth: a real 3D molar drawn by a WebGL shader (no images, no libraries). It makes a full turn as you scroll while plaque is brushed off behind a foam front, then the enamel is polished and sparkles appear. Tweak `CFG` at the top (`cleanFrom`, `cleanUntil`, `spinFrom`, `spinTo`) and the colour arrays. |
+| `assets/tooth/*.webp` | Only used as a still picture if a visitor's browser has no WebGL. |
 | `download-images.sh` | Optional: downloads every Pexels photo into `assets/img` so the site works offline. |
 
 ## Rebranding for a doctor (about 5 minutes)
