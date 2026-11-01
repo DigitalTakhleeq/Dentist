@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivora Dental | Implants, Aligners and Smile Care</title>
+  <meta name="description" content="A calm, modern dental studio for implants, clear aligners, veneers and family care. Book a free 15 minute smile chat today.">
+  <meta name="theme-color" content="#EDF0F6">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7.5 3.5C5.3 3.5 4 5.3 4 7.6c0 1.6.5 2.7.9 4 .4 1.4.3 3 .8 4.7.4 1.5 1.1 4.2 2.3 4.2 1.4 0 1.2-3.2 2-4.6.4-.7.9-1.2 2-1.2s1.6.5 2 1.2c.8 1.4.6 4.6 2 4.6 1.2 0 1.9-2.7 2.3-4.2.5-1.7.4-3.3.8-4.7.4-1.3.9-2.4.9-4C20 5.3 18.7 3.5 16.5 3.5c-1.8 0-2.7 1-4.5 1s-2.7-1-4.5-1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M8 16 16 8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m6 12.5 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.7l1.4 4-1.8 1.2a11 11 0 0 0 5.4 5.4l1.2-1.8 4 1.4v2.7a2 2 0 0 1-2.2 2A15.6 15.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m4.5 7.5 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.7 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.6 3.1 1.2-6.3L3 9.4l6.3-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6-5 6 5 6M15 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="scale(.8) translate(3 3)"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-social" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.8 12h16.4M12 3.5c2.4 2.4 3.4 5.2 3.4 8.5S14.4 18.1 12 20.5M12 3.5C9.6 5.9 8.6 8.7 8.6 12s1 6.1 3.4 8.5" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Ivora Dental home">
+      <span class="brand-mark"><svg><use href="#i-tooth"/></svg></span>
+      <span class="brand-name">Ivora Dental</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#technology">Technology</a>
+      <a href="#results">Results</a>
+      <a href="#book">Contact</a>
+    </nav>
+    <a class="pill-btn pill-btn--light" href="#book">
+      <span class="pill-icon pill-icon--dark"><svg><use href="#i-tooth"/></svg></span>
+      <span>Book a visit</span>
+    </a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+  <div class="drawer" data-drawer>
+    <a href="#about">About</a>
+    <a href="#treatments">Treatments</a>
+    <a href="#technology">Technology</a>
+    <a href="#results">Results</a>
+    <a href="#book">Contact</a>
+    <a class="pill-btn pill-btn--primary" href="#book"><span class="pill-icon"><svg><use href="#i-tooth"/></svg></span><span>Book a visit</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" data-hero>
+  <div class="hero-stage">
+    <div class="hero-panel">
+      <p class="eyebrow hero-eyebrow reveal-load" style="--d:.05s"><i></i>Implant and cosmetic dental studio</p>
+      <p class="hero-state reveal-load" style="--d:.1s" data-state-label>Plaque.</p>
+
+      <div class="hero-words reveal-load" style="--d:.1s" aria-hidden="true">
+        <span class="hw is-on" data-word>Plaque.</span>
+        <span class="hw" data-word>Polish.</span>
+        <span class="hw" data-word>Brilliant.</span>
+      </div>
+
+      <div class="tooth reveal-load" style="--d:.15s" data-tooth role="img" aria-label="3D tooth that turns and gets cleaned as you scroll">
+        <canvas data-gl></canvas>
+        <canvas data-fx></canvas>
+        <img data-fallback src="assets/tooth/clean.webp" alt="White 3D tooth model" hidden>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-copy">
+          <h1 class="split" data-split>Brilliant smiles, gently made.</h1>
+          <a class="pill-btn pill-btn--primary reveal-load" style="--d:.75s" href="#book">
+            <span class="pill-icon"><svg><use href="#i-tooth"/></svg></span><span>Book a visit</span>
+          </a>
+        </div>
+
+        <div class="hero-status reveal-load" style="--d:.9s" aria-live="polite">
+          <svg class="ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" class="ring-bg"/><circle cx="12" cy="12" r="9" class="ring-fg" data-ring/></svg>
+          <span data-status>Scroll to clean</span>
+        </div>
+
+        <div class="hero-proof reveal-load" style="--d:1.15s">
+          <div class="avatars">
+            <span class="av" style="--h:215">HL</span><span class="av" style="--h:260">DR</span><span class="av" style="--h:20">MA</span>
+          </div>
+          <div class="proof-text"><strong>4.9 average rating</strong><span>1,200+ patient reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" data-about>
+  <div class="about-sticky">
+    <div class="wrap about-grid">
+      <aside class="about-side">
+        <p class="eyebrow reveal"><i></i>About Ivora Dental</p>
+        <figure class="about-img reveal">
+          <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Dentist checking a smiling patient in a bright treatment room" loading="lazy">
+          <figcaption class="chip chip--light"><i class="live"></i>Open six days a week</figcaption>
+        </figure>
+        <div class="team reveal" style="--d:.2s">
+          <div class="avatars">
+            <span class="av" style="--h:215">HL</span><span class="av" style="--h:260">DR</span><span class="av" style="--h:20">MA</span>
+          </div>
+          <div><strong>Dr. Hana Lee and team</strong><span>14 specialists, one calm studio</span></div>
+        </div>
+      </aside>
+      <div class="about-main">
+        <p class="about-text" data-reveal-words>We believe great dentistry should feel <em>calm, honest and quietly brilliant.</em> Every plan starts with a 3D scan and a real conversation, so you leave with a smile that looks and feels completely yours.</p>
+        <ul class="tags reveal" style="--d:.15s">
+          <li>Numbing gel as standard</li><li>Fixed price plans</li><li>Same-week appointments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TREATMENTS ============ -->
+<section class="treat" id="treatments" data-treat>
+  <div class="treat-sticky">
+    <div class="wrap treat-head">
+      <div>
+        <p class="eyebrow eyebrow--inv reveal"><i></i>Treatments</p>
+        <h2 class="h2 split" data-split>One studio for every smile.</h2>
+      </div>
+      <p class="scroll-hint reveal"><span>Scroll to explore</span></p>
+    </div>
+    <div class="treat-viewport">
+      <div class="treat-track" data-track>
+        <a class="card" href="#book">
+          <figure><img src="https://images.pexels.com/photos/6627349/pexels-photo-6627349.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dentist holding a detailed model of teeth" loading="lazy"></figure>
+          <div class="card-meta"><span class="num">01</span><span class="dur">2 to 3 visits</span></div>
+          <h3>Dental implants</h3>
+          <p>Fixed teeth that look, feel and bite like your own.</p>
+          <div class="card-foot"><span>View treatment</span><span class="circ"><svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card" href="#book">
+          <figure><img src="https://images.pexels.com/photos/11887613/pexels-photo-11887613.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Woman smiling while holding a clear aligner" loading="lazy"></figure>
+          <div class="card-meta"><span class="num">02</span><span class="dur">6 to 18 months</span></div>
+          <h3>Clear aligners</h3>
+          <p>Straighten your smile with near invisible trays.</p>
+          <div class="card-foot"><span>View treatment</span><span class="circ"><svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card" href="#book">
+          <figure><img src="https://images.pexels.com/photos/5355899/pexels-photo-5355899.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tooth shade guide used to match a natural tooth colour" loading="lazy"></figure>
+          <div class="card-meta"><span class="num">03</span><span class="dur">2 visits</span></div>
+          <h3>Veneers and whitening</h3>
+          <p>Porcelain and polish, designed around your face.</p>
+          <div class="card-foot"><span>View treatment</span><span class="circ"><svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card" href="#book">
+          <figure><img src="https://images.pexels.com/photos/35000862/pexels-photo-35000862.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Smiling child holding a dental retainer" loading="lazy"></figure>
+          <div class="card-meta"><span class="num">04</span><span class="dur">45 minutes</span></div>
+          <h3>Family care</h3>
+          <p>Gentle check-ups and hygiene for every age.</p>
+          <div class="card-foot"><span>View treatment</span><span class="circ"><svg><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <div class="card card--cta">
+          <p class="eyebrow eyebrow--inv"><i></i>Free smile chat</p>
+          <h3>Not sure where to start?</h3>
+          <p>Book a free 15 minute chat and we will plan the right treatment with you.</p>
+          <a class="pill-btn pill-btn--light" href="#book"><span class="pill-icon pill-icon--dark"><svg><use href="#i-tooth"/></svg></span><span>Book a visit</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGY ============ -->
+<section class="tech" id="technology" data-tech>
+  <div class="tech-sticky">
+    <div class="wrap">
+      <p class="eyebrow reveal"><i></i>Technology</p>
+      <h2 class="h2 split" data-split>Planned in 3D, before we touch a tooth.</h2>
+      <div class="tech-stage">
+        <div class="tech-media" data-tech-media>
+          <figure class="tm is-on"><img src="https://images.pexels.com/photos/6502033/pexels-photo-6502033.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Digital X-ray scan of a full set of teeth" loading="lazy"><i class="scanline"></i><figcaption class="chip chip--glass"><i class="live"></i><b>01</b> 3D scan</figcaption></figure>
+          <figure class="tm"><img src="https://images.pexels.com/photos/6502161/pexels-photo-6502161.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Treatment plan reviewed on screen" loading="lazy"><figcaption class="chip chip--glass"><i class="live"></i><b>02</b> Smile design</figcaption></figure>
+          <figure class="tm"><img src="https://images.pexels.com/photos/13085186/pexels-photo-13085186.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Technician finishing a dental appliance in the lab" loading="lazy"><figcaption class="chip chip--glass"><i class="live"></i><b>03</b> Crafted</figcaption></figure>
+        </div>
+        <div class="tech-copy" data-tech-copy>
+          <article class="step is-on">
+            <figure class="step-img"><img src="https://images.pexels.com/photos/6502033/pexels-photo-6502033.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"></figure>
+            <div class="step-num"><span>01</span><hr></div>
+            <h3>A 3D scan in two minutes</h3>
+            <p>No goo trays and no guesswork. A low-dose scan maps every tooth and root.</p>
+            <ul class="checks"><li><span class="ck"><svg><use href="#i-check"/></svg></span>Low-dose digital X-ray</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>No messy impression trays</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Results on screen in minutes</li></ul>
+            <span class="tag">2 minute scan</span>
+          </article>
+          <article class="step">
+            <figure class="step-img"><img src="https://images.pexels.com/photos/6502161/pexels-photo-6502161.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"></figure>
+            <div class="step-num"><span>02</span><hr></div>
+            <h3>See your smile before we start</h3>
+            <p>We design your treatment on screen and walk you through the result, step by step.</p>
+            <ul class="checks"><li><span class="ck"><svg><use href="#i-check"/></svg></span>Preview your new smile</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Clear timeline and fixed price</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Change anything before we start</li></ul>
+            <span class="tag">Digital smile preview</span>
+          </article>
+          <article class="step">
+            <figure class="step-img"><img src="https://images.pexels.com/photos/13085186/pexels-photo-13085186.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"></figure>
+            <div class="step-num"><span>03</span><hr></div>
+            <h3>Crafted and placed with precision</h3>
+            <p>Crowns and aligners are made from your plan, then fitted gently, often the same day.</p>
+            <ul class="checks"><li><span class="ck"><svg><use href="#i-check"/></svg></span>Crowns milled in our studio</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Numbing gel as standard</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Same-day fit for most crowns</li></ul>
+            <span class="tag">Same-day crowns</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="results" id="results" data-results>
+  <div class="wrap">
+    <p class="eyebrow reveal"><i></i>Results</p>
+    <h2 class="h2 split" data-split>Real smiles, real change.</h2>
+    <div class="results-bar reveal">
+      <div class="stats">
+        <div><strong data-stat-a>3 months</strong><span>Treatment time</span></div>
+        <div><strong data-stat-b>3 visits</strong><span>In the chair</span></div>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab is-on" role="tab" data-tab="0" data-a="3 months" data-b="3 visits" data-img="35000852">Implants</button>
+        <button class="tab" role="tab" data-tab="1" data-a="12 months" data-b="8 visits" data-img="11887613">Aligners</button>
+        <button class="tab" role="tab" data-tab="2" data-a="1 week" data-b="2 visits" data-img="35000849">Whitening</button>
+      </div>
+    </div>
+
+    <div class="ba reveal" data-ba>
+      <img class="ba-img ba-after" data-after src="https://images.pexels.com/photos/35000852/pexels-photo-35000852.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="After treatment" loading="lazy" draggable="false">
+      <div class="ba-before-wrap" data-before-wrap>
+        <img class="ba-img ba-before" data-before src="https://images.pexels.com/photos/35000852/pexels-photo-35000852.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Before treatment" loading="lazy" draggable="false">
+      </div>
+      <span class="chip chip--tint ba-lab ba-lab--l">Before</span>
+      <span class="chip chip--tint ba-lab ba-lab--r">After</span>
+      <div class="ba-handle" data-handle tabindex="0" role="slider" aria-label="Compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <span class="ba-knob"><svg><use href="#i-chev"/></svg></span>
+      </div>
+    </div>
+    <div class="ba-caption"><span class="mono">Drag the handle to compare</span><span>Example case. Individual results vary.</span></div>
+  </div>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section class="stories" id="stories">
+  <div class="wrap stories-head">
+    <div>
+      <p class="eyebrow eyebrow--inv reveal"><i></i>Patient stories</p>
+      <h2 class="h2 split" data-split>Loved by 1,200+ patients.</h2>
+    </div>
+    <div class="rating reveal">
+      <b>4.9</b>
+      <div><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><span>Average from 1,200+ Google reviews</span></div>
+    </div>
+  </div>
+  <div class="marquee" data-marquee>
+    <div class="m-row" data-dir="-1">
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>I finally smile in photos again. The implant feels exactly like my own tooth.</blockquote><figcaption><span class="av" style="--h:330">MR</span><div><b>Maya R.</b><span>Dental implant</span></div></figcaption></figure>
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>Zero pain and zero lectures. The calmest dental visit I have ever had.</blockquote><figcaption><span class="av" style="--h:40">DK</span><div><b>Daniel K.</b><span>Check-up and hygiene</span></div></figcaption></figure>
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>They showed me my new smile on screen before we started. Such a relief.</blockquote><figcaption><span class="av" style="--h:170">PS</span><div><b>Priya S.</b><span>Clear aligners</span></div></figcaption></figure>
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>My kids actually ask when they can go back. That says it all.</blockquote><figcaption><span class="av" style="--h:260">TH</span><div><b>Tom H.</b><span>Family care</span></div></figcaption></figure>
+    </div>
+    <div class="m-row" data-dir="1">
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>Same-day crown, done before lunch. I was back at work by two.</blockquote><figcaption><span class="av" style="--h:200">LM</span><div><b>Lena M.</b><span>Same-day crown</span></div></figcaption></figure>
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>Honest pricing upfront and no surprises at the end. Rare and appreciated.</blockquote><figcaption><span class="av" style="--h:100">OA</span><div><b>Omar A.</b><span>Porcelain veneers</span></div></figcaption></figure>
+      <figure class="t"><div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>I used to be terrified of dentists. This team changed that in one visit.</blockquote><figcaption><span class="av" style="--h:15">GL</span><div><b>Grace L.</b><span>First visit</span></div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="eyebrow reveal"><i></i>FAQ</p>
+      <h2 class="h2 split" data-split>Questions, answered.</h2>
+      <div class="unsure reveal">
+        <div class="avatars"><span class="av" style="--h:215">HL</span><span class="av" style="--h:260">DR</span><span class="av" style="--h:20">MA</span></div>
+        <h3>Still unsure?</h3>
+        <p>Talk to a real person on our team. We reply within the hour, six days a week.</p>
+        <a class="pill-btn pill-btn--white" href="tel:+000000000000"><span class="pill-icon"><svg><use href="#i-tooth"/></svg></span><span>Call +00 000 000 0000</span></a>
+      </div>
+    </div>
+    <div class="acc reveal" data-acc>
+      <div class="acc-item is-open"><button class="acc-q" aria-expanded="true"><span>Does treatment hurt?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>Most patients feel little to nothing. We use numbing gel as standard, gentle techniques and take breaks whenever you need one.</p></div></div></div>
+      <div class="acc-item"><button class="acc-q" aria-expanded="false"><span>How much will my treatment cost?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>Every plan comes with a fixed price before we begin, so there are no surprises. Your free smile chat will give you a clear range for your treatment.</p></div></div></div>
+      <div class="acc-item"><button class="acc-q" aria-expanded="false"><span>Do you accept dental insurance?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>Yes, we work with most major providers and can help you claim. Bring your details to your first visit and we will check your cover with you.</p></div></div></div>
+      <div class="acc-item"><button class="acc-q" aria-expanded="false"><span>What happens at my first visit?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>We start with a quick conversation and a two minute 3D scan. You will see the results on screen and leave with a clear plan, timeline and price.</p></div></div></div>
+      <div class="acc-item"><button class="acc-q" aria-expanded="false"><span>Do you see dental emergencies?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>Yes. Call us and we will do our best to see you the same day. Same-week appointments are available for everything else.</p></div></div></div>
+      <div class="acc-item"><button class="acc-q" aria-expanded="false"><span>Can my children come too?</span><span class="acc-ic"><svg><use href="#i-plus"/></svg></span></button><div class="acc-a"><div><p>Absolutely. Our family care visits are gentle, unhurried and designed to make children feel at ease from the very first check-up.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section class="book" id="book">
+  <div class="wrap book-inner">
+    <p class="eyebrow eyebrow--inv reveal book-eyebrow"><i></i>Book a visit</p>
+    <h2 class="h2 h2--xl split" data-split>Ready for your new smile?</h2>
+    <p class="book-sub reveal">Book a free 15 minute smile chat. We reply within the hour, six days a week.</p>
+
+    <form class="form reveal" data-form novalidate>
+      <div class="f-row">
+        <label><span>Full name <b>*</b></span><input name="name" type="text" placeholder="Jane Smith" required autocomplete="name"></label>
+        <label><span>Phone <b>*</b></span><input name="phone" type="tel" placeholder="000 000 0000" required autocomplete="tel"></label>
+      </div>
+      <div class="f-row">
+        <label><span>Email <b>*</b></span><input name="email" type="email" placeholder="jane@example.com" required autocomplete="email"></label>
+        <label>Preferred date<input name="date" type="date"></label>
+      </div>
+      <label>Treatment
+        <span class="select"><select name="treatment">
+          <option value="">Choose a treatment</option><option>Dental implants</option><option>Clear aligners</option><option>Veneers and whitening</option><option>Family care</option><option>Not sure yet</option>
+        </select><svg><use href="#i-down"/></svg></span>
+      </label>
+      <label>Anything we should know?<textarea name="notes" rows="4" placeholder="Tell us what is bothering you or what you would like to change"></textarea></label>
+      <button class="pill-btn pill-btn--primary form-btn" type="submit"><span class="pill-icon"><svg><use href="#i-tooth"/></svg></span><span data-form-label>Book my visit</span></button>
+      <p class="form-note" data-form-note role="status"></p>
+    </form>
+
+    <ul class="contact reveal">
+      <li><span class="circ circ--inv"><svg><use href="#i-phone"/></svg></span><div><small class="mono">Call us</small><a href="tel:+000000000000">+00 000 000 0000</a></div></li>
+      <li><span class="circ circ--inv"><svg><use href="#i-mail"/></svg></span><div><small class="mono">Email</small><a href="mailto:example@gmail.com">example@gmail.com</a></div></li>
+      <li><span class="circ circ--inv"><svg><use href="#i-pin"/></svg></span><div><small class="mono">Mon to Sat, 8am to 7pm</small><a href="#book">123 Example Street, City</a></div></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand brand--inv" href="#top"><span class="brand-mark"><svg><use href="#i-tooth"/></svg></span><span class="brand-name">Ivora Dental</span></a>
+        <p>A calm, modern dental studio for implants, aligners and family care.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg><use href="#i-social"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg><use href="#i-social"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg><use href="#i-social"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg><use href="#i-social"/></svg></a>
+        </div>
+      </div>
+      <div><h4 class="mono">Explore</h4><a href="#about">About</a><a href="#treatments">Treatments</a><a href="#technology">Technology</a><a href="#results">Results</a><a href="#stories">Patient stories</a><a href="#faq">FAQ</a><a href="#book">Contact</a></div>
+      <div><h4 class="mono">Visit</h4><a href="#book">123 Example Street</a><a href="#book">City 00000</a><a href="#book">Mon to Sat, 8am to 7pm</a></div>
+      <div><h4 class="mono">Contact</h4><a href="tel:+000000000000">+00 000 000 0000</a><a href="mailto:example@gmail.com">example@gmail.com</a><a href="#book">Book a visit</a></div>
+      <div><h4 class="mono">Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ivora Dental. All rights reserved.</span>
+      <a href="#top" class="to-top"><span>Back to top</span><span class="circ circ--inv"><svg style="transform:rotate(-45deg)"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/tooth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
