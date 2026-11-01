@@ -340,6 +340,46 @@ em .rw{color:#C5CAD5}
   .hero-eyebrow,.hero-state{top:36px}
 }
 
+/* ---------- lower sections: second compact pass ---------- */
+.results{padding:clamp(52px,8vh,72px) 0 clamp(48px,7vh,64px)}
+.results .h2,.stories .h2,.faq .h2{font-size:clamp(26px,min(3.2vw,5vh),40px)}
+.stats{gap:28px}
+.stats strong{font-size:26px}
+.stats span{font-size:13px}
+.tab{padding:8px 16px;font-size:14px}
+.results-bar{margin:22px 0 16px}
+.ba{aspect-ratio:auto;height:clamp(240px,44vh,420px);border-radius:26px}
+.ba-knob{width:44px;height:44px;font-size:24px}
+.ba-lab{top:14px}.ba-lab--l{left:14px}.ba-lab--r{right:14px}
+.ba-caption{margin-top:12px;font-size:13px}
+.stories{padding:clamp(52px,8vh,72px) 0}
+.stories-head{margin-bottom:28px}
+.marquee{gap:16px}
+.t{width:320px;padding:22px;min-height:180px;border-radius:24px}
+.t .stars{font-size:15px}
+.t blockquote{font-size:16.5px;margin:14px 0 20px}
+.t .av{width:34px;height:34px}
+.faq{padding:clamp(52px,8vh,72px) 0}
+.faq-grid{grid-template-columns:320px 1fr;gap:56px}
+.faq .h2{margin-bottom:22px}
+.acc-q{padding:18px 0;font-size:18px}
+.acc-ic{width:30px;height:30px;font-size:17px}
+.acc-a p{font-size:15.5px;padding:0 48px 20px 0}
+.book{padding:clamp(52px,8vh,72px) 0 clamp(44px,6vh,56px)}
+.book .h2--xl{font-size:clamp(32px,min(4.4vw,7vh),54px)}
+.book-sub{font-size:16px;margin:14px auto 26px}
+.form{padding:22px;gap:12px;max-width:600px;border-radius:24px}
+.f-row{gap:12px}
+.form label{font-size:13px;gap:6px}
+.form input,.form select,.form textarea{padding:10px 14px;font-size:14px;border-radius:12px}
+.form textarea{min-height:64px}
+.contact{margin-top:30px;gap:36px}
+.footer{padding-bottom:24px}
+.foot-grid{padding:44px 0 32px;gap:32px}
+.foot-brand p{margin:14px 0 18px;font-size:14px}
+.foot-grid>div:not(.foot-brand) a{font-size:14px;margin-bottom:8px}
+.foot-bottom{padding-top:20px;font-size:13px}
+
 /* =========================================================
    Responsive
    ========================================================= */
@@ -435,4 +475,17 @@ em .rw{color:#C5CAD5}
   *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
   .reveal,.split .w{opacity:1;transform:none;filter:none}
   .m-row{animation:none}
+}
+
+/* phone: lower sections a bit tighter */
+@media (max-width:900px){
+  .results,.stories,.faq{padding:56px 0}
+  .book{padding:56px 0 44px}
+  .results .h2,.stories .h2,.faq .h2{font-size:clamp(26px,7.4vw,32px)}
+  .book .h2--xl{font-size:clamp(30px,9vw,38px)}
+  .ba{height:clamp(220px,40vh,320px)}
+  .t{width:min(78vw,290px)}
+  .acc-q{font-size:17px;padding:16px 0}
+  .stats strong{font-size:22px}
+  .foot-grid{padding-top:40px}
 }
